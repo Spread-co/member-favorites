@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "My/Household favourites tabs with live Realtime sync for Spread.co members",
   "scripts": {
-    "build": "weweb build",
+    "build": "weweb build -- name=member-favorites type=element",
     "serve": "weweb serve"
   },
   "devDependencies": {

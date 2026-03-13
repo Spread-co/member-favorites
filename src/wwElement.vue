@@ -1,5 +1,5 @@
 <template>
-  <div class="mfav" :class="{ 'mfav--loading-initial': initialLoad }">
+  <div v-if="!content.portalTarget || content.portalTarget === 'member'" class="mfav" :class="{ 'mfav--loading-initial': initialLoad }">
 
     <!-- Non-member gate -->
     <div v-if="!content.isMember" class="mfav__locked">

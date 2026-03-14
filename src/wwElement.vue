@@ -488,6 +488,8 @@ export default {
   font-family: var(--spread-font);
   width: 100%;
   box-sizing: border-box;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 /* ── Locked gate ── */
@@ -973,5 +975,9 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+}
+
+@media (min-width: 769px) {
+  .mfav__grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
 }
 </style>

@@ -980,4 +980,11 @@ export default {
 @media (min-width: 769px) {
   .mfav__grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
 }
+@media (min-width: 1024px) {
+  .mfav__grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+}
+@media (min-width: 1280px) {
+  .mfav { padding: 20px 32px; }
+  .mfav__grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+}
 </style>

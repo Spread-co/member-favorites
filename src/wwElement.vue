@@ -113,6 +113,7 @@
                 :key="idx"
                 class="mfav__card-initial"
                 :title="`${item.favorited_by_count} household member${item.favorited_by_count !== 1 ? 's' : ''} saved this`"
+                :aria-label="`${item.favorited_by_count} household member${item.favorited_by_count !== 1 ? 's' : ''} saved this`"
               >{{ ini }}</span>
               <span v-if="item.favorited_by_count > 3" class="mfav__card-initial mfav__card-initial--more">+{{ item.favorited_by_count - 3 }}</span>
             </div>
@@ -490,6 +491,7 @@ export default {
   box-sizing: border-box;
   max-width: 1440px;
   margin-inline: auto;
+  padding: 16px;
 }
 
 /* ── Locked gate ── */
@@ -948,6 +950,19 @@ export default {
   background: rgba(230, 216, 202, 0.12);
   color: var(--spread-text-secondary);
 }
+:global(html.dark) .mfav__tab { color: rgba(230,216,202,0.55); }
+:global(html.dark) .mfav__tab--active { color: #f5f0eb; border-bottom-color: #ce6632; }
+:global(html.dark) .mfav__card { background: #18181b; border-color: rgba(230,216,202,0.12); }
+:global(html.dark) .mfav__card-name { color: #f5f0eb; }
+:global(html.dark) .mfav__card-price { color: #bead38; }
+:global(html.dark) .mfav__card-desc { color: rgba(230,216,202,0.55); }
+:global(html.dark) .mfav__card-body { border-top-color: rgba(230,216,202,0.08); }
+:global(html.dark) .mfav__remove-btn { color: rgba(230,216,202,0.3); }
+:global(html.dark) .mfav__remove-btn:hover { color: #f87171; background: rgba(248,113,113,0.08); }
+:global(html.dark) .mfav__empty { color: rgba(230,216,202,0.4); }
+:global(html.dark) .mfav__empty-icon { color: rgba(230,216,202,0.15); }
+:global(html.dark) .mfav__section-heading { color: #f5f0eb; }
+:global(html.dark) .mfav__divider { border-color: rgba(230,216,202,0.08); }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {

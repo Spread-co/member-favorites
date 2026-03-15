@@ -941,7 +941,7 @@ export default {
   --spread-surface: #1a0f14;
   --spread-bg: #1f1218;
   --spread-border: rgba(230, 216, 202, 0.12);
-  --spread-text-primary: #f5f0eb;
+  --spread-text-primary: #e6d8ca;
   --spread-text-secondary: #e6d8ca;
   --spread-text-muted: rgba(230, 216, 202, 0.45);
 }
@@ -951,9 +951,9 @@ export default {
   color: var(--spread-text-secondary);
 }
 :global(html.dark) .mfav__tab { color: rgba(230,216,202,0.55); }
-:global(html.dark) .mfav__tab--active { color: #f5f0eb; border-bottom-color: #ce6632; }
+:global(html.dark) .mfav__tab--active { color: #e6d8ca; border-bottom-color: #ce6632; }
 :global(html.dark) .mfav__card { background: #18181b; border-color: rgba(230,216,202,0.12); }
-:global(html.dark) .mfav__card-name { color: #f5f0eb; }
+:global(html.dark) .mfav__card-name { color: #e6d8ca; }
 :global(html.dark) .mfav__card-price { color: #bead38; }
 :global(html.dark) .mfav__card-desc { color: rgba(230,216,202,0.55); }
 :global(html.dark) .mfav__card-body { border-top-color: rgba(230,216,202,0.08); }
@@ -961,7 +961,7 @@ export default {
 :global(html.dark) .mfav__remove-btn:hover { color: #f87171; background: rgba(248,113,113,0.08); }
 :global(html.dark) .mfav__empty { color: rgba(230,216,202,0.4); }
 :global(html.dark) .mfav__empty-icon { color: rgba(230,216,202,0.15); }
-:global(html.dark) .mfav__section-heading { color: #f5f0eb; }
+:global(html.dark) .mfav__section-heading { color: #e6d8ca; }
 :global(html.dark) .mfav__divider { border-color: rgba(230,216,202,0.08); }
 
 /* ── Responsive ── */
